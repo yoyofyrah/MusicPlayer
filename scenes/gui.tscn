@@ -1,0 +1,170 @@
+[gd_scene load_steps=12 format=3 uid="uid://haof1im38gjp"]
+
+[ext_resource type="Script" path="res://scripts/gui.gd" id="1_mla5l"]
+[ext_resource type="Texture2D" uid="uid://d2mtgbfvym51t" path="res://art/Image_1-14-24_at_11.23.png" id="2_4ijg7"]
+[ext_resource type="Script" path="res://scripts/VolumeSlider.gd" id="3_or4wh"]
+[ext_resource type="FontFile" uid="uid://b8tp8mgltofix" path="res://art/IronJarvisDEMO.otf" id="3_so65u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n4bqh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7fhrt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7cg6u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cntcg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j38ww"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ovvn6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_866sx"]
+
+[node name="gui" type="Control"]
+layout_mode = 3
+anchor_right = 0.499
+anchor_bottom = 0.499
+offset_right = -638.72
+offset_bottom = -359.28
+scale = Vector2(2, 2)
+script = ExtResource("1_mla5l")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="picture" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 3194.0
+offset_bottom = 1795.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_4ijg7")
+stretch_mode = 4
+
+[node name="realm" type="Button" parent="."]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 25.0
+offset_right = 719.0
+offset_bottom = 170.0
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.898039, 0.717647, 1)
+theme_override_fonts/font = ExtResource("3_so65u")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n4bqh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7fhrt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7cg6u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cntcg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j38ww")
+text = "Realm"
+
+[node name="battle" type="Button" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 26.0
+offset_right = 326.0
+offset_bottom = 160.0
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.898039, 0.717647, 1)
+theme_override_fonts/font = ExtResource("3_so65u")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ovvn6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7fhrt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7cg6u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cntcg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j38ww")
+text = "Battle"
+
+[node name="town" type="Button" parent="."]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 22.0
+offset_right = 595.0
+offset_bottom = 209.0
+scale = Vector2(0.48, 0.48)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.898039, 0.717647, 1)
+theme_override_fonts/font = ExtResource("3_so65u")
+theme_override_font_sizes/font_size = 140
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ovvn6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7fhrt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7cg6u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cntcg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j38ww")
+text = "Town"
+
+[node name="cave" type="Button" parent="."]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 122.0
+offset_right = 628.0
+offset_bottom = 259.0
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.898039, 0.717647, 1)
+theme_override_fonts/font = ExtResource("3_so65u")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ovvn6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7fhrt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7cg6u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cntcg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j38ww")
+text = "Cave"
+
+[node name="hall" type="Button" parent="."]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 123.0
+offset_right = 413.0
+offset_bottom = 257.0
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.898039, 0.717647, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.239216, 0.180392, 1)
+theme_override_fonts/font = ExtResource("3_so65u")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ovvn6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7fhrt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7cg6u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cntcg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j38ww")
+text = "Hall"
+
+[node name="stop" type="Button" parent="."]
+layout_mode = 0
+offset_left = 42.5
+offset_top = 240.0
+offset_right = 180.5
+offset_bottom = 381.0
+scale = Vector2(0.55, 0.55)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.898039, 0.717647, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_so65u")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxEmpty_866sx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7fhrt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7cg6u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cntcg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j38ww")
+text = "stop"
+
+[node name="VolumeSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 274.0
+offset_right = 479.0
+offset_bottom = 319.0
+scale = Vector2(1.3, 1.3)
+max_value = 1.0
+step = 0.05
+script = ExtResource("3_or4wh")
+
+[connection signal="pressed" from="realm" to="." method="_on_realm_pressed"]
+[connection signal="pressed" from="battle" to="." method="_on_battle_pressed"]
+[connection signal="pressed" from="town" to="." method="_on_town_pressed"]
+[connection signal="pressed" from="cave" to="." method="_on_cave_pressed"]
+[connection signal="pressed" from="hall" to="." method="_on_hall_pressed"]
+[connection signal="mouse_entered" from="stop" to="." method="_on_stop_mouse_entered"]
+[connection signal="pressed" from="stop" to="." method="_on_stop_pressed"]
+[connection signal="mouse_exited" from="VolumeSlider" to="VolumeSlider" method="_on_mouse_exited"]
+[connection signal="value_changed" from="VolumeSlider" to="VolumeSlider" method="_on_value_changed"]
